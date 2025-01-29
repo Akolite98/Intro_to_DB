@@ -43,6 +43,3 @@ CREATE TABLE ORDER_DETAILS (
     FOREIGN KEY (order_id) REFERENCES ORDERS(order_id),
     FOREIGN KEY (book_id) REFERENCES BOOKS(book_id)
 );
-
--- Ensure foreign key constraints are enforced
-ALTER TABLE ORDERS ADD CONSTRAINT fk_customer FOREIGN KEY (customer_id) REFERENCES CUSTOMERS(customer_id);
